@@ -42,7 +42,7 @@ Diferente de se fizermos `this instanceof Conta`, que será verdadeiro mesmo se 
 * Pensando na proteção do nosso sistema
 * Lançando erros para o sistema
 
-Lançamos erros para que a execução do script seja interrompida, já que o javascript não possui  as palavras-chaves específicas de POO, como `private`, `protected` ou `abstract`, e suas lógicas devem ser implementadas.
+Lançamos erros para que a execução do script seja interrompida, já que o javascript não possui algumas das palavras-chaves específicas de POO, como `private`, `protected` ou `abstract`, e suas lógicas devem ser implementadas.
 
 * Classes abstratas
 * Métodos abstratos
@@ -50,3 +50,13 @@ Lançamos erros para que a execução do script seja interrompida, já que o jav
 Por exemplo, para implementar um método abstrato, basta lançarmos um erro no bloco de execução do método. Assim, obrigamos que as classes filhas sobrescrevam o método.
 
 * Erros em tempo de execução
+
+## Módulo 4
+
+* Revisão de Herança, boas práticas de código e encapsulamento
+* Polimorfismo
+
+Polimorfismo é a técnica de aproveitar propriedades, métodos e quaisquer outras características que a Herança proporciona. Por exemplo, as classes `Diretor` e `Gerente` herdam de `Funcionario`, e caso eu tenha um método de outra classe que espera uma instância de `Funcionario` como parâmetro, eu posso usar instâncias `Diretor` e `Gerente` também, já que também são instâncias de `Funcionario` e herdam suas propriedades e métodos.
+
+* Métodos estáticos
+* Maneiras de tratar objetos de diferentes tipos de maneira parecida
