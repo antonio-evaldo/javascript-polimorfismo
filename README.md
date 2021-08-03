@@ -33,7 +33,7 @@ Caso estejamos utilizando uma classe mãe abstrata, por exemplo `Conta`, e quere
 
 ```js
 if (this.constructor == Conta) {
-    console.log("É uma instância direta de Conta!");
+    console.error("É uma instância direta de Conta!");
 }
 ```
 
