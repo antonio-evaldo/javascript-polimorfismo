@@ -60,3 +60,23 @@ Polimorfismo é a técnica de aproveitar propriedades, métodos e quaisquer outr
 
 * Métodos estáticos
 * Maneiras de tratar objetos de diferentes tipos de maneira parecida
+
+## Módulo 5
+
+* Operador `in`
+
+Com o operador `in`, verificamos se existe uma propriedade ou atributo com um certo nome em um objeto. O exemplo abaixo verifica se `autenticavel.autenticar` existe e se é um método de `autenticavel`:
+
+```js
+"autenticar" in autenticavel &&
+autenticavel.autenticar instanceof Function
+```
+
+* Operador `instaceof`
+* Como proteger nossos sistemas
+* Interfaces padronizadas
+* Ducky Typing e sua relação com Interfaces
+
+Duck Typing pode ser resumido na frase: "Se anda como um pato, faz quack como um pato, então deve ser um pato". Basicamente, é o emprego de "interfaces" no javascript, ao fazer a verificação se certo objeto possui as propriedades e métodos esperados.
+
+Por exemplo, nem todos no nosso sistema são **autenticáveis**, e os que são fazem parte de classes como `Gerente`, `Funcionario` e `Cliente`. Essas classes não têm uma classe mãe em comum, e aí que entra o conceito de Interface, e nesse caso, todas as pessoas autenticáveis devem ter o método `autenticar`.
